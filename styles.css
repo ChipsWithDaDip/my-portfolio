@@ -53,3 +53,43 @@ html, body{
 footer{
     text-align: center;
 }
+/* dark mode */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: white;
+    
+}
+
+body.dark-mode header {
+    background-color: #333;
+    color: white;
+    border-color: white;
+}
+
+body.dark-mode nav a {
+    color: white;
+}
+
+body.dark-mode section {
+    background-color: #2b2b2b;
+    color: white;
+    border-color: white;
+}
+
+body.dark-mode footer {
+    color: white;
+}
+#darkToggle {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 2px solid black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+body.dark-mode #darkToggle {
+    background-color: #444;
+    color: white;
+    border-color: white;
+}
