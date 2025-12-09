@@ -53,43 +53,47 @@ html, body{
 footer{
     text-align: center;
 }
-/* dark mode */
+
+/*dark mode*/
 body.dark-mode {
-    background-color: #1a1a1a;
-    color: white;
-    
+    background-color: #0d0d0d;
+    color: #e5e5e5;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-body.dark-mode header {
-    background-color: #333;
-    color: white;
-    border-color: white;
+body.dark-mode header,
+body.dark-mode section {
+    background-color: rgba(20, 20, 20, 0.85);
+    color: #f0f0f0;
+    border-color: #777;
 }
 
 body.dark-mode nav a {
-    color: white;
-}
-
-body.dark-mode section {
-    background-color: #2b2b2b;
-    color: white;
-    border-color: white;
+    color: #ffffff;
 }
 
 body.dark-mode footer {
-    color: white;
-}
-#darkToggle {
-    margin-top: 10px;
-    padding: 10px 15px;
-    border-radius: 6px;
-    border: 2px solid black;
-    cursor: pointer;
-    font-weight: bold;
+    color: #ccc;
 }
 
 body.dark-mode #darkToggle {
-    background-color: #444;
+    background-color: #222;
     color: white;
-    border-color: white;
+    border-color: #aaa;
 }
+
+.dark-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);  
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+body.dark-mode .dark-overlay {
+    opacity: 1;
+}
+
