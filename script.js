@@ -32,3 +32,16 @@
   message.style.color = "green";
   form.reset();
 });
+//dark mode//
+const darkToggle = document.getElementById("darkToggle");
+
+darkToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        darkToggle.textContent = "Light Mode";
+    } else {
+        darkToggle.textContent = "Dark Mode";
+    }
+});
+
